@@ -13,7 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			
 			// Get text sent
-			$text = $event['...']['text'];
+			$text = $event['message']['text'];
 			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => ทำไรอยู่
+				'text' => สวัสดี
 				
 			];
 			
