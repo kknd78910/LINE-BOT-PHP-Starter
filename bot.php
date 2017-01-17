@@ -20,15 +20,19 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 				'text' => สวัสดี
+				
+			];
+			$messages2 = [
 				'type' => 'text',
-				'text' =>ทำไร
+				'text' => เรางง
+				
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],[$messages],
+				'messages' => [$messages],[$messages2],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
