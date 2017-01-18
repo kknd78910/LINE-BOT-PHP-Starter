@@ -13,7 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			
 			// Get text sent
-			$text = $event['message']['text'];
+			$text = $event['ทำไร']['text'];
 			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
@@ -30,7 +30,7 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => ทำไร,
+				'messages' => [$messages],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
@@ -49,4 +49,4 @@ if (!is_null($events['events'])) {
 	
 	}
 }
-echo "OK6";
+echo "OK7";
