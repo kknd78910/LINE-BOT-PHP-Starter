@@ -13,7 +13,8 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			
 			// Get text sent
-			$text = $event['ทำไร']['text'];
+			//$text = $event['$text']['text'];
+			$text = $event
 			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
@@ -49,4 +50,4 @@ if (!is_null($events['events'])) {
 	
 	}
 }
-echo "OK7";
+echo "OK8";
