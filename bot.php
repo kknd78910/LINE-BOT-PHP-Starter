@@ -30,7 +30,7 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [ทำไร],
+				'messages' => ทำไร,
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
@@ -49,4 +49,4 @@ if (!is_null($events['events'])) {
 	
 	}
 }
-echo "OK5";
+echo "OK6";
