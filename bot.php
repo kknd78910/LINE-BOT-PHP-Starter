@@ -24,6 +24,11 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => $text
 				
+			]
+				[
+				'type' => 'text',
+				'text' => $text
+				
 			];
 			
 
