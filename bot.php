@@ -46,7 +46,7 @@ if (!is_null($events['events'])) {
 			echo $result . "\r\n";
 		}
 		
-				if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
+		else	if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
 		
@@ -84,5 +84,5 @@ if (!is_null($events['events'])) {
 		
 	}
 }
-echo "OK";
+echo "OK2";
 echo '$text';
