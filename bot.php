@@ -13,6 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+			$text2 = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -23,7 +24,7 @@ if (!is_null($events['events'])) {
 			];
 			$messages2 = [
 				'type' => 'text',
-				'text' => $text
+				'text' => $text2
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
