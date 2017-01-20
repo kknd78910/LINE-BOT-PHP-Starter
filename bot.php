@@ -41,6 +41,6 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo'$messages';
-echo '$text' . "\r\n";
+echo $messages;
+echo $text . "\r\n";
 echo "OK";
