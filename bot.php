@@ -22,7 +22,24 @@ if (!is_null($events['events'])) {
 				if($text == 'สวัสดี'){
 					$messages = [
 				'type' => 'text',
-				'text' => 'กูงงสาส'
+				'text' => 'สวัสดีเราชื่อแบกะโต๊ะ'
+			];
+				}else if($text == 'หิว'){
+					$messages = [
+				'type' => 'text',
+				'text' => 'กินข้าวไหมละ'
+			];
+				}
+			else if($text == 'กิน'){
+					$messages = [
+				'type' => 'text',
+				'text' => 'สั่งอาหารกับเราสิ อร่อยทุกอย่าง'
+			];
+				}
+			else if($text == 'ไม่กิน'){
+					$messages = [
+				'type' => 'text',
+				'text' => 'พ่องมึงตาย fuck'
 			];
 				}
 			// Build message to reply back
